@@ -814,13 +814,36 @@
                   @media (max-width: 575px) {
                     .down-menu {
                       overflow-x: scroll;
+                      max-width: 300px;
                     }
   
                     .article, .article_broadcast {
                       padding: 24px 0;
                     }
                     .content__inner_wide, .content__inner_search {
-                      padding: 0 12px;
+                      padding: 0;
+                    }
+                    .btn {
+                      max-width: 280px;
+                      width: 280px;
+                    }
+                    .btn {
+                      font-size: 18px;
+                      box-sizing: border-box;
+                    }
+                    .comments {
+                      max-width: 300px;
+                    }
+                    .article__title {
+                      padding-left: 12px;
+                      padding-right: 12px;
+                      font-size: 32px;
+                      font-size: 28px;
+                      line-height: 34px;
+                    }
+                    .article__date {
+                      padding-left: 12px;
+                      padding-right: 12px;
                     }
                   }
                 </style>
@@ -1256,9 +1279,9 @@
                       <div class="form__ava" style="display: flex; align-items: start; margin-right: 10px;">
                         <img class="img__noname" style="max-width: 80px" src="images/user.png" alt="">
                       </div>
-                      <div class="form__fields" style="width: 80%; flex-direction: column; display: flex;">
-                        <input type="text" placeholder="Nombre" id="inputCommentName" required="" style="margin-bottom: 10px; height: 30px; border-radius: 1px;  border: 1px solid grey; padding-left: 5px;">
-                        <input type="text" placeholder="Añadir comentario" required="" id="inputCommentText" style="margin-bottom: 10px; height: 50px; border-radius:1px; border: 1px solid grey; padding-left: 5px;">
+                      <div class="form__fields" style="width: 80%; flex-direction: column; display: flex;overflow: hidden;">
+                        <input type="text" placeholder="Nombre" id="inputCommentName" required="" style="width: 260px;margin-bottom: 10px;     box-sizing: border-box;height: 30px; border-radius: 1px;  border: 1px solid grey; padding-left: 5px;">
+                        <input type="text" placeholder="Añadir comentario" required="" id="inputCommentText" style="width: 260px;margin-bottom: 10px; height: 50px;     box-sizing: border-box;border-radius:1px; border: 1px solid grey; padding-left: 5px;">
                         <textarea style="display: none;" name="" id="inputCommentText" placeholder="Enviar" cols="20" rows="5"></textarea>
                       </div>
       
@@ -1271,7 +1294,7 @@
     height: 30px;
     background: rgb(116 144 235);
     color: #FFFFFF;
-    font-size: 14px;">Enviar</button>
+    font-size: 14px;display: flex;align-items: center;justify-content: center;box-sizing:border-box">Enviar</button>
                   </form>
     
     
